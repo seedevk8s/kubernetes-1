@@ -1,0 +1,12 @@
+#!/bin/bash
+kubectl delete rs --all &> /dev/null
+kubectl delete rc --all &> /dev/null
+kubectl delete service --all  &> /dev/null
+kubectl delete pod --all &> /dev/null
+kubectl delete configmap --all &> /dev/null
+kubectl delete daemonset --all &> /dev/null
+kubectl delete deployment --all
+kubectl delete job --all &> /dev/null
+kubectl delete cronjob --all &> /dev/null
+kubectl delete resourcequota --all &> /dev/null
+kubectl delete limitrange --all &> /dev/null

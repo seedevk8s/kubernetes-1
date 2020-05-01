@@ -1,0 +1,14 @@
+#!/bin/bash
+cat <<EOF | kubectl apply -f - &> /dev/null
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+  - image: agentx
+    name: agentx
+---
+EOF

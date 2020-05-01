@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svcappjs
+spec:
+  selector:
+    name: web
+  ports:
+  - port: 80
+    targetPort: 8080
